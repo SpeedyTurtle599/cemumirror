@@ -10,6 +10,8 @@
 		D842B96529A9E6800053E235 /* socklib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D842B96429A9E6800053E235 /* socklib.a */; };
 		D842B96929A9E74E0053E235 /* wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D842B96829A9E74D0053E235 /* wrapper.cpp */; };
 		D842B96B29A9E7C70053E235 /* sock.c in Sources */ = {isa = PBXBuildFile; fileRef = D842B96A29A9E7C70053E235 /* sock.c */; };
+		D842B96D29A9E9950053E235 /* msock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D842B96C29A9E9940053E235 /* msock.cpp */; };
+		D842B96F29A9E9BB0053E235 /* socklibcpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D842B96E29A9E9BB0053E235 /* socklibcpp.a */; };
 		D8CCE8AD29A9576B00CD10A3 /* cemumirrorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CCE8AC29A9576B00CD10A3 /* cemumirrorApp.swift */; };
 		D8CCE8AF29A9576B00CD10A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CCE8AE29A9576B00CD10A3 /* ContentView.swift */; };
 		D8CCE8B129A9576E00CD10A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8CCE8B029A9576E00CD10A3 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		D842B96729A9E74D0053E235 /* cemumirror-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cemumirror-Bridging-Header.h"; sourceTree = "<group>"; };
 		D842B96829A9E74D0053E235 /* wrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wrapper.cpp; sourceTree = "<group>"; };
 		D842B96A29A9E7C70053E235 /* sock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sock.c; sourceTree = "<group>"; };
+		D842B96C29A9E9940053E235 /* msock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = msock.cpp; sourceTree = "<group>"; };
+		D842B96E29A9E9BB0053E235 /* socklibcpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = socklibcpp.a; sourceTree = "<group>"; };
 		D8CCE8A929A9576B00CD10A3 /* cemumirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cemumirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8CCE8AC29A9576B00CD10A3 /* cemumirrorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cemumirrorApp.swift; sourceTree = "<group>"; };
 		D8CCE8AE29A9576B00CD10A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D842B96F29A9E9BB0053E235 /* socklibcpp.a in Frameworks */,
 				D842B96529A9E6800053E235 /* socklib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +88,7 @@
 		D842B96329A9E6800053E235 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D842B96E29A9E9BB0053E235 /* socklibcpp.a */,
 				D842B96429A9E6800053E235 /* socklib.a */,
 			);
 			name = Frameworks;
@@ -92,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				D842B96829A9E74D0053E235 /* wrapper.cpp */,
+				D842B96C29A9E9940053E235 /* msock.cpp */,
 				D842B96A29A9E7C70053E235 /* sock.c */,
 				D842B96629A9E6F20053E235 /* nimbase.h */,
 				D8CCE8AB29A9576B00CD10A3 /* cemumirror */,
@@ -282,6 +289,7 @@
 			files = (
 				D8CCE8AF29A9576B00CD10A3 /* ContentView.swift in Sources */,
 				D8CCE8AD29A9576B00CD10A3 /* cemumirrorApp.swift in Sources */,
+				D842B96D29A9E9950053E235 /* msock.cpp in Sources */,
 				D842B96929A9E74E0053E235 /* wrapper.cpp in Sources */,
 				D842B96B29A9E7C70053E235 /* sock.c in Sources */,
 			);
