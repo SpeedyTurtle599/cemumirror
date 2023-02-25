@@ -3,7 +3,7 @@ import pyautogui as gui
 import pygame
 import pygame._sdl2 as sdl2
 import os
-import sdlgetwnd
+#import sdlgetwnd
 
 class GamePad:
     def __init__(self):
@@ -17,5 +17,5 @@ class GamePad:
 g = GamePad()
 print(g.wid)
 
-sdlgetwnd.test2()
+#sdlgetwnd.test2()
 #sdl2.Window.
