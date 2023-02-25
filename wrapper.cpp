@@ -19,9 +19,30 @@
 }
 */
 
-extern "C" int getIntFromCPP()
+extern "C" int socketMake()
 {
     // Create an instance of A, defined in
     // the library, and call getInt() on it:
-    return A(1234).getInt();
+    return makeSocket(<#NimStringDesc *ip#>, <#int port#>)()
+}
+
+extern "C" int socketReceive()
+{
+    // Create an instance of A, defined in
+    // the library, and call getInt() on it:
+    return recv(<#tyObject_SocketImpl__aIhANOOoETolVz9cccNO9cRQ *sock#>, <#int size#>)()
+}
+
+extern "C" int socketSend()
+{
+    // Create an instance of A, defined in
+    // the library, and call getInt() on it:
+    return send(<#tyObject_SocketImpl__aIhANOOoETolVz9cccNO9cRQ *sock#>, <#NimStringDesc *data#>)()
+}
+
+extern "C" int socketClose()
+{
+    // Create an instance of A, defined in
+    // the library, and call getInt() on it:
+    return close(<#tyObject_SocketImpl__aIhANOOoETolVz9cccNO9cRQ *sock#>)()
 }
